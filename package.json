@@ -1,0 +1,24 @@
+{
+  "name": "clickhouse-vs-mongodb",
+  "version": "0.0.1",
+  "private": true,
+  "description": "This is a simple performance test against mongodb clickhouse",
+  "scripts": {
+    "insert-mongodb": "node ./mongodb/insert.js",
+    "insert-clickhouse": "node ./clickhouse/insert.js",
+    "select-group-clickhouse": "node ./clickhouse/select-group-by-month-count.js",
+    "select-group-mongodb": "node ./mongodb/select-group-by-month-count.js",
+    "select-limit-clickhouse": "node ./clickhouse/select-limit-20.js",
+    "select-limit-mongodb": "node ./mongodb/select-limit-20.js"
+
+  },
+  "author": "lvovgeka@gmail.com",
+  "keywords": ["MongoDB", "ClickHouse"],
+  "dependencies": {
+    "clickhouse": "^1.1.0",
+    "faker": "^3.1.0",
+    "mongodb": "^2.2.22",
+    "promise": "^7.1.1"
+  },
+  "license" : "MIT"
+}
